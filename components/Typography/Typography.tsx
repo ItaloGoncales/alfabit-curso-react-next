@@ -38,7 +38,7 @@ const Typography = ({
 }: TypographyProps) => {
   const Element = element as any;
   return (
-    <Element className={` ${textVariants(rest)} ${className}`} {...rest}>
+    <Element className={`${textVariants(rest)} ${className}`} {...rest}>
       {children}
     </Element>
   );
