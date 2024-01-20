@@ -13,14 +13,31 @@ const meta: Meta<AvatarProps> = {
 
 export default meta;
 
-export const AvatarImage: StoryObj<AvatarProps> = {
-    args: {
-      size: "lg",
-      image: "https://placehold.co/400x400.png",
-    },
-  };
-  
-
 export const Primary: StoryObj<AvatarProps> = {
   args: {},
+};
+
+export const AvatarSmall: StoryObj<AvatarProps> = {
+  args: {
+    size: "sm",
+  },
+};
+
+export const AvatarMedium: StoryObj<AvatarProps> = {
+  args: {
+    size: "md",
+  },
+};
+
+export const AvatarLarge: StoryObj<AvatarProps> = {
+  args: {
+    size: "lg",
+  },
+};
+
+export const AvatarImage: StoryObj<AvatarProps> = {
+  args: {
+    size: "lg",
+    image: "https://placehold.co/400x400.png",
+  },
 };

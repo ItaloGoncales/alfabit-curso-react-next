@@ -6,24 +6,12 @@ const meta: Meta<BoxProps> = {
   title: "Atoms/Box",
   component: Box,
   argTypes: {
-    children: {
-      type: "string",
-    },
-    type: {
-      type: "string",
-    },
-    rounded: {
-      type: "boolean",
-    },
-    border: {
-      type: "boolean",
-    },
-    filledBackground: {
-      type: "boolean",
-    },
-    className: {
-      type: "string",
-    },
+    children: { type: "string" },
+    type: { type: "string" },
+    rounded: { type: "boolean" },
+    border: { type: "boolean" },
+    filledBackground: { type: "boolean" },
+    className: { type: "string" },
   },
 };
 
@@ -35,7 +23,7 @@ export const Primary: StoryObj<BoxProps> = {
 
 export const Default: StoryObj<BoxProps> = {
   args: {
-    children: "Esta é uma Box Padrão",
+    children: "Este é uma Box Padrão",
     filledBackground: true,
     type: "primary",
   },
@@ -43,7 +31,7 @@ export const Default: StoryObj<BoxProps> = {
 
 export const BoxAlert: StoryObj<BoxProps> = {
   args: {
-    children: "Este é um Alerta!",
+    children: "Este é um alerta!",
     filledBackground: true,
     rounded: true,
     type: "alert",

@@ -11,13 +11,10 @@ const InputOrTextArea = (props: InputProps) => {
     return (
       <textarea
         {...(props as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
-      ></textarea>
-    );
-  } else {
-    return (
-      <input {...(props as React.InputHTMLAttributes<HTMLInputElement>)} />
+      />
     );
   }
+  return <input {...(props as React.InputHTMLAttributes<HTMLInputElement>)} />;
 };
 
 const Input = ({ label, className, ...rest }: InputProps) => {
@@ -26,10 +23,11 @@ const Input = ({ label, className, ...rest }: InputProps) => {
       {label && <label className="absolute pt-1 pl-3 text-xs">{label}</label>}
       <InputOrTextArea
         className={`
-      bg-dark text-gray-primary rounded-md p-3 
-      disabled:bg-disabled disabled:border-2 disabled:border-disabled
-      ${label && "pt-5"}
-      ${className}`}
+        bg-dark text-gray-primary rounded-md p-3
+        disabled:bg-disabled disabled:border-2 disabled:border-disabled
+        ${label && "pt-5"}
+        ${className}
+      `}
         {...rest}
       />
     </div>

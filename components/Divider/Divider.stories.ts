@@ -6,9 +6,7 @@ const meta: Meta<DividerProps> = {
   title: "Atoms/Divider",
   component: Divider,
   argTypes: {
-    children: {
-      type: "string",
-    },
+    children: { type: "string" },
   },
 };
 
@@ -22,8 +20,21 @@ export const Default: StoryObj<DividerProps> = {
   args: {},
 };
 
-export const DividerWithProps: StoryObj<DividerProps> = {
+export const DivisorWithProps: StoryObj<DividerProps> = {
   args: {
-    children: "Hello, World!",
+    children: "Olá mundo",
+  },
+};
+
+export const ThicknessDivisor: StoryObj<DividerProps> = {
+  args: {
+    height: "h-[4px]",
+  },
+};
+
+export const DivisorDark: StoryObj<DividerProps> = {
+  args: {
+    bgColor: "dark",
+    height: "h-1",
   },
 };

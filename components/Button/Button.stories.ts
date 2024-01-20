@@ -22,7 +22,7 @@ export default meta;
 
 export const Primary: StoryObj<ButtonProps> = {
   args: {
-    children: "Botão ",
+    children: "Botão",
   },
 };
 

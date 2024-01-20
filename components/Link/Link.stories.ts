@@ -12,6 +12,9 @@ const meta: Meta<LinkProps> = {
     href: {
       type: "string",
     },
+    disabled: {
+      type: "boolean",
+    },
     className: {
       type: "string",
     },
